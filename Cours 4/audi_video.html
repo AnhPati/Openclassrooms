@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="audio_video.css" />
+        <title>audio et video</title>
+    </head>
+
+    <body>
+      <audio src="musics/Simpsons.mp3" controls><!--On peut renseigner un message d'erreur si la video ne s'affiche pas--></audio>
+      <!--<audio> permet d'intégrer une vidéo à la page-->
+      <!--controls: pour ajouter les boutons « Lecture », « Pause » et la barre de défilement. Cela peut sembler indispensable, et vous vous demandez peut-être pourquoi cela n'y figure pas par défaut, mais certains sites web préfèrent créer eux-mêmes leurs propres boutons et commander la lecture avec du JavaScript.-->
+      <!--width: pour modifier la largeur de l'outil de lecture audio.-->
+      <!--loop: la musique sera jouée en boucle.-->
+      <!--autoplay: la musique sera jouée dès le chargement de la page. Évitez d'en abuser, c'est en général irritant d'arriver sur un site qui joue de la musique tout seul !-->
+      <!--preload: indique si la musique peut être préchargée dès le chargement de la page ou non. Cet attribut peut prendre les valeurs :-->
+      <!--auto(par défaut) : le navigateur décide s'il doit précharger toute la musique, uniquement les métadonnées ou rien du tout.-->
+      <!--metadata: charge uniquement les métadonnées (durée, etc.).-->
+      <!--none: pas de préchargement. Utile si vous ne voulez pas gaspiller de bande passante sur votre site.-->
+
+      <audio controls>
+        <source src="musics/Simpsons.mp3">
+        <source src="musics/Simpsons.ogg">
+      </audio>
+      <!--Avec la balise <source> on peut proposer plusieurs versions du fichier-->
+
+      <p>Blalalalalalalalalalalala</p>
+
+      <video src="video/Simpsons.webm" controls poster="images/simpsons.jpg" width="600"><!--On peut renseigner un message d'erreur si la video ne s'affiche pas--></video>
+      <!--<video> permet d'insérer une video-->
+      <!--poster: image à afficher à la place de la vidéo tant que celle-ci n'est pas lancée. Par défaut, le navigateur prend la première image de la vidéo mais, comme il s'agit souvent d'une image noire ou d'une image peu représentative de la vidéo, je vous conseille d'en créer une ! Vous pouvez tout simplement faire une capture d'écran d'un moment de la vidéo.-->
+      <!--controls: pour ajouter les boutons « Lecture », « Pause » et la barre de défilement. Cela peut sembler indispensable, mais certains sites web préfèrent créer eux-mêmes leurs propres boutons et commander la lecture avec du JavaScript. En ce qui nous concerne, ce sera largement suffisant !-->
+      <!--width: pour modifier la largeur de la vidéo.-->
+      <!--height: pour modifier la hauteur de la vidéo.-->
+      <!--loop: la vidéo sera jouée en boucle.-->
+      <!--autoplay: la vidéo sera jouée dès le chargement de la page. Là encore, évitez d'en abuser, c'est en général irritant d'arriver sur un site qui lance quelque chose tout seul !-->
+      <!--preload: indique si la vidéo peut être préchargée dès le chargement de la page ou non. Cet attribut peut prendre les valeurs :-->
+      <!--auto(par défaut) : le navigateur décide s'il doit précharger toute la vidéo, uniquement les métadonnées ou rien du tout.-->
+      <!--metadata: charge uniquement les métadonnées (durée, dimensions, etc.).-->
+      <!--none: pas de préchargement. Utile si vous souhaitez éviter le gaspillage de bande passante sur votre site.-->
+      <video controls poster="images/simpsons.jpg" width="600">
+        <source src="video/simpsons.mp4">
+        <source src="video/simpsonslmpsons.webm">
+      </video>
+      <!--Avec la balise <source> on peut proposer plusieurs versions du fichier-->
+
+
+    </body>
+</html>

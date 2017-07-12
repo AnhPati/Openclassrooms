@@ -1,0 +1,11 @@
+
+p
+{
+	color: blue;
+	font-size: 80em; /* Gere la taille des paragraphes */
+}
+
+h1
+{
+	font-size: 72em; /* Gere la taille des titres h1 */
+}

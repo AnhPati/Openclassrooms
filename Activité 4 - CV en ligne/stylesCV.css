@@ -1,0 +1,255 @@
+@font-face /* Police téléchargée et rajoutée */
+{ 
+    font-family: 'coiny-regular';
+   		 	src: url('fonts/coiny_regular_macroman/coiny-regular-webfont.eot');
+    		src: url('fonts/coiny_regular_macroman/coiny-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         		url('fonts/coiny_regular_macroman/coiny-regular-webfont.woff') format('woff'),
+         		url('fonts/coiny_regular_macroman/coiny-regular-webfont.ttf') format('truetype'),
+         		url('fonts/coiny_regular_macroman/coiny-regular-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Blogger_Sans';
+    src: url('fonts/bloggersans_regular_macroman/Blogger_Sans-webfont.eot');
+    src: url('fonts/bloggersans_regular_macroman/Blogger_Sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_regular_macroman/Blogger_Sans-webfont.woff') format('woff'),
+         url('fonts/bloggersans_regular_macroman/Blogger_Sans-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_regular_macroman/Blogger_Sans-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Blogger_Sans-bold';
+    src: url('fonts/bloggersans_bold_macroman/Blogger_Sans-bold-webfont.eot');
+    src: url('fonts/bloggersans_bold_macroman/Blogger_Sans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_bold_macroman/Blogger_Sans-bold-webfont.woff') format('woff'),
+         url('fonts/bloggersans_bold_macroman/Blogger_Sans-bold-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_bold_macroman/Blogger_Sans-bold-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+
+{
+    font-family: 'Blogger_Sans-bold_italic';
+    src: url('fonts/bloggersans_bolditalic_macroman/Blogger_Sans-bold_italic-webfont.eot');
+    src: url('fonts/bloggersans_bolditalic_macroman/Blogger_Sans-bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_bolditalic_macroman/Blogger_Sans-bold_italic-webfont.woff') format('woff'),
+         url('fonts/bloggersans_bolditalic_macroman/Blogger_Sans-bold_italic-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_bolditalic_macroman/Blogger_Sans-bold_italic-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Blogger_Sans-italic';
+    src: url('fonts/bloggersans_italic_macroman/Blogger_Sans-italic-webfont.eot');
+    src: url('fonts/bloggersans_italic_macroman/Blogger_Sans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_italic_macroman/Blogger_Sans-italic-webfont.woff') format('woff'),
+         url('fonts/bloggersans_italic_macroman/Blogger_Sans-italic-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_italic_macroman/Blogger_Sans-italic-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger_Sans-Light';
+    src: url('fonts/bloggersans_Light_macroman/Blogger_Sans-Light-webfont.eot');
+    src: url('fonts/bloggersans_Light_macroman/Blogger_Sans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_Light_macroman/Blogger_Sans-Light-webfont.woff') format('woff'),
+         url('fonts/bloggersans_Light_macroman/Blogger_Sans-Light-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_Light_macroman/Blogger_Sans-Light-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger_Sans-Light_mediumitalic';
+    src: url('fonts/bloggersans_Lightitalic_macroman/Blogger_Sans-Light_mediumitalic-webfont.eot');
+    src: url('fonts/bloggersans_Lightitalic_macroman/Blogger_Sans-Light_mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_Lightitalic_macroman/Blogger_Sans-Light_mediumitalic-webfont.woff') format('woff'),
+         url('fonts/bloggersans_Lightitalic_macroman/Blogger_Sans-Light_mediumitalic-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_Lightitalic_macroman/Blogger_Sans-Light_mediumitalic-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger_Sans-medium';
+    src: url('fonts/bloggersans_medium_macroman/Blogger_Sans-medium-webfont.eot');
+    src: url('fonts/bloggersans_medium_macroman/Blogger_Sans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_medium_macroman/Blogger_Sans-mediumLmedium-webfont.woff') format('woff'),
+         url('fonts/bloggersans_medium_macroman/Blogger_Sans-medium-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_medium_macroman/Blogger_Sans-medium-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blogger_Sans-medium_italic';
+    src: url('fonts/bloggersans_mediumitalic_macroman/Blogger_Sans-medium_italicwebfont.eot');
+    src: url('fonts/bloggersans_mediumitalic_macroman/Blogger_Sans-medium_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bloggersans_mediumitalic_macroman/Blogger_Sans-medium_italicmedium_italic-webfont.woff') format('woff'),
+         url('fonts/bloggersans_mediumitalic_macroman/Blogger_Sans-medium_italic-webfont.ttf') format('truetype'),
+         url('fonts/bloggersans_mediumitalic_macroman/Blogger_Sans-medium_italic-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('images/Background.jpg');
+    font-family: 'Blogger_Sans', Arial, sans-serif;
+    color: #181818;
+    font-size: 1em;
+}
+
+#page
+{
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction:row;
+}
+
+#principal
+{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 600px;
+    align-content: flex-start;
+}
+
+/*BANDEAU COTE*/
+
+#liseret
+{
+    display: flex;
+    height:100vh;
+    width: 10%;
+    min-width: 0;
+    background-color: #82f2d0;
+    color:#0f3f44;
+    flex-direction: column;
+    text-align:center;
+    font-size:0.8em;
+    padding:-50px;
+}
+
+#liseret h2
+{
+    font-family: 'Blogger_Sans-Light', Arial, sans-serif;
+}
+
+.langue
+{
+    text-align:left;
+}
+
+#en
+{
+    list-style: disc url('images/united-kingdom.png') inside;
+}
+
+#de
+{
+    list-style: disc url('images/germany.png') inside;
+}
+
+
+/*HAUT DE PAGE*/
+
+header
+{
+    margin:auto;
+}
+
+header h1
+{
+    font-family: 'coiny-regular', serif;
+    font-size: 4.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;    
+}
+
+header h2
+{
+    font-family: Blogger_Sans-bold_italic, serif;
+    font-size: 2.1em;
+    margin-top: 0px;
+    font-weight: normal;
+
+}
+
+#en_tete
+{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align:center;
+}
+
+#titre
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+
+}
+
+
+/*CORPS DU DOCUMENT*/
+
+section
+{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+
+section h2
+{
+    font-family: coiny-regular, serif;
+    font-weight: normal;
+    text-align: top;
+    padding:auto;
+
+}
+
+#experience
+{
+    width:50%;
+    height: 100%;
+    margin:auto;
+}
+
+#competences
+{
+    width:20%;
+    height: 100%;
+    margin:auto;
+}
+
+#formation
+{
+    width:30%;
+    height: 100%;
+    margin:auto;
+}

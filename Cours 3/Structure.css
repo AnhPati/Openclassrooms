@@ -1,0 +1,225 @@
+div
+{
+	height: 300px;
+	/*width: 800px;*/
+}
+p
+{
+	background-color: green; /*Couleur du fond du bloc*/
+	height:50px; /*Definit la hauteur du bloc*/
+    /*width: 50%; /* Definit la largeur du bloc*/
+    min-width: 400px; /*Largeur minimal du bloc*/
+}
+
+article
+{
+	width: 350px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 12px; /* Marge intérieure de 12px */
+    margin: 50px; /* Marge extérieure de 50px */
+    overflow: auto;
+}
+
+aside
+{
+	width: 350px; /* On a indiqué une largeur (obligatoire) */
+    margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+    border: 1px solid black;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+nav
+{
+	display: inline-block; /*Display modifie le type des balises, peut transformer inline en block, vice versa, en super balise inline-block ou encore ne pas les afficher avec none.*/
+    /*float: left; /*Fait flotter le menu a gauche pour que le texte se place à droite*/
+    width: 150px;
+    border: 1px solid black;
+    vertical-align: top;/*Modifie l'alignement vertical des éléments: top, middle, bottom ou une valeur*/
+    /*position: fixed; /* Fixe l'élément, même en cas de scroll*/
+}
+
+section
+{
+	display: inline-block;/*Les éléments inline-block se positionnent les uns à coté des autres et on peut leur donner des dimensions précises*/
+    border: 1px solid blue;
+    /*margin-left: 170px; /*Rajout d'une marge gauche au bloc section pour qu'il ne se superpose pas avec le menu*/
+    /*clear:both; Arrete le flottement, le bloc texte se placera alors en dessous du menu*/
+    vertical-align: top;
+}
+
+img
+{
+	position:absolute; /*La position absolute place l'élément à un endroit exact de la âge, nécessite top, left, right, bottom*/
+	top: 0;
+	right:0;
+	/*z-index: chiffre; permet d'indiquer qu'elle image superpose l'autre quand plusieurs se chevauchent a cause d'absolute*/
+}
+
+strong
+{
+   background-color: red; /* Fond rouge */
+   color: yellow; /* Texte de couleur jaune */
+   position: relative;
+   left: 55px;
+   top: 10px;
+}
+
+.modif
+{
+	width: 350px; 
+    margin: auto;
+    border: 1px solid black;
+    word-wrap: break-word; /*Force le retour à la ligne quand le texte touche la bordure*/
+}
+
+.element1
+{
+	background-color:red;
+	width:200px;
+	height:50px;
+	border: 2px black solid;
+}
+
+.element2
+{
+	background-color:yellow;
+	width:200px;
+	height:50px;
+	border: 2px black solid;
+}
+
+.element3
+{
+	background-color:green;
+	width:200px;
+	height:50px;
+	border: 2px black solid;
+
+}
+
+.element4
+{
+
+}
+
+.element5
+{
+
+}
+
+.element4:nth-child(2) /* On prend le deuxième bloc élément */
+{
+    background-color: red;
+}
+
+#conteneur1
+{
+	display: flex;
+}
+
+#conteneur2
+{
+    display: flex;
+    flex-direction: column; /*Permet de positionner verticalement ou encore inverser les éléments: column remet les éléments en colonne*/
+
+}
+
+#conteneur3
+{
+    display: flex;
+    flex-direction: column-reverse; /*Column-reverse positionne les éléments en colonne en ordre inversé*/
+}
+
+#conteneur4
+{
+    display: flex;
+    flex-wrap: wrap; /*Demande à ce que les blocs aillent à la ligne lorsqu'ils n'ont plus la place*/
+}
+
+#conteneur5
+{
+    display: flex;
+    justify-content: space-around; /*Change l'alignement des éléments: au début, à la fin, au centre, étiré avec ou sans espace sur les extrémintés*/
+}
+
+#conteneur6
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*Fonctionne également sur l'axe vertical*/
+    height: 350px; /* Un peu de hauteur pour que les éléments aient la place de bouger */
+}
+
+#conteneur7
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Change l'alignement des éléments sur l'axe secondaire: étiré, au début, à la fin, au centre, sur la ligne de base*/
+}
+
+#conteneur8
+{
+	display:flex;
+}
+
+.element
+{
+	margin: auto; /*La combinaison de flex sur le conteneur et auto sur la marge de l'élément permet un centrage vertical et horizontal des plus faciles*/
+}
+
+#conteneur9
+{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(2) /* On prend le deuxième bloc élément */
+{
+    background-color: blue;
+    align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+}
+
+#conteneur10
+{
+    display: flex;
+    flex-wrap: wrap; /*Autorisation aux éléments à aller à la ligne avec flex-wrap*/
+    align-content: space-between; /*Change l'alignement de plusieurs éléments: au début, à la fin; au centre avec ou sans espace entre eux et aux extrémités, étiré*/
+}
+
+#conteneur11
+{
+    display: flex;
+}
+
+.case:nth-child(1)
+{
+    order: 3;
+}
+.case:nth-child(2)
+{
+    order: 1;
+}
+.case:nth-child(3)
+{
+    order: 2;
+}
+
+#conteneur12
+{
+    display: flex;
+}
+
+.big:nth-child(1)
+{
+    flex: 2;
+}
+.big:nth-child(2)
+{
+    flex: 1;
+}

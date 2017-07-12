@@ -1,0 +1,37 @@
+@media all and (max-width: 1024px)
+
+{
+	/* Eléments principaux de la page */
+	#principal
+	{
+		min-width:0px;
+	}
+
+	/*BANDEAU COTE*/
+    #liseret    
+    {
+    	display: none; /*Si la fenêtre est trop petite, none fait disparaitre l'élément*/
+    }
+
+    /*CORPS DU DOCUMENT*/
+    section
+    {
+        flex-direction: column;/*Plutôt que de placer de placer les articles sur la droite on les remet en colonne*/ 
+    }
+
+    #experience
+	{
+    	width:100%;
+	}
+
+	#competences
+	{
+    	width:100%;
+	}
+
+	#formation
+	{
+    	width:100%;
+	}
+
+}

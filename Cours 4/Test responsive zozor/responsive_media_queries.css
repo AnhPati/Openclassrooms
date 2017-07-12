@@ -1,0 +1,90 @@
+/*La règle signifie : « Pour tous les types d'écrans, si la largeur de la fenêtre ne dépasse pas 1024 px, alors exécuter les règles CSS suivantes ».*/
+@media all and (max-width: 1024px)
+
+{
+
+	/*PAGE INTEGRALE*/
+	#bloc_page
+	{
+		width: auto;
+		/*Avec auto la page prendra alors tout l'espace disponible dans la fenêtre. Cela évite l'apparition de barres de défilement horizontales sur les petites résolutions.*/
+ 	}
+
+
+ 	/*MENU DE NAVIGATION*/
+	/*Plutôt que de lui donner une dimension fixe, nous allons lui redonner sa dimension automatique flexible d'origine*/
+ 	nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+        /*Chaque élément du menu s'écrira en dessous du précédent : pour cela, nous demandons à ce que les éléments de la Flexbox soit organisés en colonne.*/
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+        /*le texte sera écrit plus petit*/
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+        /*Retrait de  la bordure en bas des liens lors du survol, car elle est moins adaptée à cette disposition.*/
+    }
+
+    /*BANNIERE*/
+    #banniere_image
+    {
+    	display: none;
+    	/*Si la fenêtre est trop petite, none fait disparaitre l'élément*/
+    }
+	
+	/*Le bloc A propos de l'auteur*/
+	section
+    {
+        flex-direction: column;
+        /*Plutôt que de placer ce bloc à droite de l'article, nous allons le faire passer en-dessous grâce à des Flexbox en colonne*/
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    #fleche_bulle
+    {
+        display: none;
+    }
+    
+    #photo_zozor img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+        /*À l'intérieur du bloc, nous réajustons un peu la position des éléments : la photo de Zozor, notamment, sera placée en flottant à droite*/
+    }
+    
+    aside p:last-child
+    {
+        text-align: center;
+        /*aside p signifie « Tous les paragraphes à l'intérieur de la balise <aside> ». Avec :last-child, on cible uniquement le dernier paragraphe dans le bloc aside (celui qui contient les liens vers Facebook et Twitter), pour pouvoir centrer les images.*/
+    }
+}
+
+
+/*Pour cibler les smartphones, plutôt que d'utiliser max-width, il peut être intéressant de recourir à max-device-width : c'est la largeur du périphérique. Les périphériques mobiles ne dépassant pas 480 px de large, on pourra viser uniquement les navigateurs mobiles avec cette media query */
+/*@media all and (max-device-width: 480px)*/
+{
+    /* Vos règles CSS pour les mobiles ici */
+}

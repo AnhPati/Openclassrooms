@@ -1,0 +1,170 @@
+@font-face /* Police téléchargée et rajoutée */
+{ 
+    font-family: 'gooddogregular';
+   		 	src: url('fonts/GoodDog-webfont.eot');
+    		src: url('fonts/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         		url('fonts/GoodDog-webfont.woff') format('woff'),
+         		url('fonts/GoodDog-webfont.ttf') format('truetype'),
+         		url('fonts/GoodDog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body/* On travaille sur la balise body, donc sur TOUTE la page */
+{
+    background-color: black; /* Le fond de la page sera noir */
+    color: white; /* Le texte de la page sera blanc */
+}
+
+p
+{
+	color: #7AD95F; /* Gère la couleur des paragraphes */
+	font-size: 2em; /* Gere la taille des paragraphes */
+    font-family: gooddogregular, Impact, "Arial Black", Arial, Verdana, sans-serif;
+    text-align: justify; /* Le texte utilise toute la largeur possible */
+    opacity: 0.3;
+    background-color: #B24CCF;
+}
+
+h1
+{
+	font-size: 10em; /* Gere la taille des titres h1 */
+	text-align: center; /*Aligne le titre au centre*/
+	color: teal;
+}
+
+h2
+{
+    font-style: italic; /* Style italique pour les titres h2 */
+}
+
+mark
+{
+    /* La couleur de fond prend le pas sur celle de toute la page */
+    background-color: red;
+    color: black;
+}
+
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: red;
+   font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
+
+a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: #FFCC66;
+}
+
+a:focus /* Quand le visiteur sélectionne le lien */
+{
+    background-color:#ff6666;
+}
+
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: #AAA; /* Appliquer une couleur grise */
+}
+
+div:hover
+{
+    text-align: center;
+    border: 3px green groove;
+    border-radius: 10px 5px 10px 5px; 
+}
+
+.relief
+{
+	color: red;
+}
+
+.gras
+{
+	font-weight: bold;
+}
+
+.test
+{
+    text-decoration: blink;
+}
+
+.souligne
+{
+    text-decoration: underline;
+}
+
+.barre
+{
+    text-decoration: line-through;
+}
+
+.ligne_dessus
+{
+    text-decoration: overline;
+}
+
+.signature
+{
+    text-align: right;
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.stopfloat
+{
+	clear: both;
+}
+
+.Font_text
+{
+
+	background: url("images/background.jpg") fixed no-repeat top right, url("images/background2.jpg") fixed bottom left;
+}
+
+.boardashed
+{
+    border: 3px blue dashed; /*Super définition: largeur, couleur et type. */
+}
+
+.semiboard
+{
+    border-left: 2px solid black; /*Bordure uniquement à gauche.*/
+    border-right: 2px solid black;/*Bordure uniquement à droite*/
+}
+.normal /*Attribué à Body pour que la page redevienne blanche;*/
+{
+    background-color: white; /* Le fond sera blanc */
+    color: black; /* Le texte sera noir */
+}
+.rondeur
+{
+    text-align: center;
+    border: 3px green groove;
+    border-radius: 10px 5px 10px 5px; /*Définit l'arrondi des angles haut-gauche, haut-droite, bas-droite, bas-gauche.*/
+}
+.Ombre
+{
+    border: 2px black solid;
+    box-shadow: 6px 6px 6px black; /*Définit l'ombre d'un bloc: son décalage horizontal, vertical, l'adoucissement du dégradé et sa couleur.*/ 
+}
+
+.bordinterne
+{
+    border: 2px black solid;
+    box-shadow: 6px 6px 6px black inset; /*Inset indique que l'ombre est projetée à l'intérieur du bloc.*/
+}
+.Ombretext
+{
+    text-shadow: 2px 2px 4px orange; /*Definit l'ombre du texte: décalage, adoucissement, couleur.*/
+}

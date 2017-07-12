@@ -1,0 +1,115 @@
+
+body /* l'arrière plan de la page */
+{
+    font-family: 'schoolbellregular', Arial, sans-serif;
+    color: green;
+}
+
+
+
+#bloc_page
+{
+    width: 100%;    
+    margin: auto;
+}
+
+header
+{
+	position: relative;
+
+}
+
+#nom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFC524;
+    font-size: 120%;
+    
+}
+
+#presentation
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: green;
+    font-size: 80%;
+}
+
+#image
+{
+	position: absolute;
+	right: 0;
+	top: 0; 
+}
+header
+{
+    border-bottom: 1px solid #FFC524;
+}
+
+#conteneur
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 65%;
+	margin-left: 15%;
+}
+
+.experience 
+{
+	font-size: 100%;
+	width: 50%;
+	position: absolute;
+}
+
+.experience h3
+{
+	text-align: center;
+}
+
+.competences
+{
+	font-size: 100%;
+	position: absolute;
+}
+
+.competences h3
+{
+	text-align: center;
+}
+
+.formation
+{
+	font-size: 100%;
+	width: 25%;
+	position: absolute;
+}
+
+.formation h3
+{
+	text-align: center;
+}
+
+aside
+{
+	width: 10%;
+	height: 600px;
+	background-color: #FFC524;
+	position: fixed;
+	top: 0;
+}
+
+
+
+@font-face {
+    font-family: 'schoolbellregular';
+    src: url('schoolbell-webfont.woff2') format('woff2'),
+         url('schoolbell-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+           }

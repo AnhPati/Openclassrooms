@@ -1,0 +1,73 @@
+@font-face /* Police téléchargée et rajoutée */
+{ 
+    font-family: 'gooddogregular';
+   		 	src: url('fonts/Gooddog/GoodDog-webfont.eot');
+    		src: url('fonts/Gooddog/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         		url('fonts/Gooddog/GoodDog-webfont.woff') format('woff'),
+         		url('fonts/Gooddog/GoodDog-webfont.ttf') format('truetype'),
+         		url('fonts/Gooddog/GoodDog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fff_tusjbold';
+    src: url('fonts/Tusj/FFF_Tusj-webfont.eot');
+    src: url('fonts/Tusj/FFF_Tusj-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Tusj/FFF_Tusj-webfont.woff') format('woff'),
+         url('fonts/Tusj/FFF_Tusj-webfont.ttf') format('truetype'),
+         url('fonts/Tusj/FFF_Tusj-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	background: url("images/background.png") scroll no-repeat top right
+}
+
+h1
+{
+	font-family: fff_tusjbold, Impact, "Arial Black", Arial, Verdana, sans-serif;
+	text-align: center;
+    color:#2d0a0a;
+}
+
+h2
+{
+	font-family: fff_tusjbold, Impact, "Arial Black", Arial, Verdana, sans-serif;
+	text-align: center;
+    color:#2d0a0a;
+
+}
+
+img
+{
+	border: 2px #4b9681 solid;
+    box-shadow: 6px 6px 6px #3e665a;
+}
+
+ul
+{
+	font-family: gooddogregular, Impact, "Arial Black", Arial, Verdana, sans-serif;
+	margin: auto;
+}
+
+h3
+{
+	font-family: gooddogregular, Impact, "Arial Black", Arial, Verdana, sans-serif;
+	text-align: center;
+}
+
+.center-div
+{
+	margin: 0 auto;
+	width:600px;
+}
+
+div
+{
+	border: 3px #52f9ca groove;
+    border-radius: 10px 10px 10px 10px;
+}

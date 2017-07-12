@@ -1,0 +1,44 @@
+h2
+{
+	color : navy;
+}
+h1,p
+{
+	text-align: center;
+}
+body
+{
+	background-image: url("img/fond.jpg");
+	font-family: "geometria-police";
+}
+.photo
+{
+	float: right;
+	border: 3px navy solid;
+	box-shadow: 6px 6px 0px navy;
+}
+@font-face 
+{
+	font-family: "geometria-police";
+	src: url("geometria-police.woff");
+}
+section
+{
+	display: flex;
+	justify-content: space-between;
+	
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.liseret
+{
+	width: 150px;
+	height:300px;
+	background-color: navy;
+}
+
+

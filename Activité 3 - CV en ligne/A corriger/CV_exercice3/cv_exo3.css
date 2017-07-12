@@ -1,0 +1,157 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+
+#page
+{
+    display: flex;
+}
+#lisere
+{  
+    justify-content: left;
+    position: relative;
+    display: flex;
+    height: 450px;
+    width: 15%;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#bloc_page
+{
+    position: relative;
+    background-color: orange;
+    justify-content: right;
+    width: 100%;
+}
+
+/*header*/
+
+#titre_principal
+{
+    display: flex;
+    position: relative;
+    background-color: grey;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 5%;
+}
+
+#pres
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+#presentation
+{
+    color: red
+}
+
+
+#ma_photo
+{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-left: 30%;
+
+}
+
+/*section*/
+
+#contenu
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#contenu mark
+{
+    text-decoration: underline;
+}
+
+#contenu p
+{
+    display:flex;
+    text-align: justify;
+    
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 1000px;
+    width: 95%;
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+section h2
+{
+    display:flex;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+    
+
+section p
+{
+    display: flex;
+    padding-top: 0%;
+    position: relative;
+    align-items: center;
+
+}
+
+section ul
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+section:nth-child(1)
+{
+    border: none;
+}
+
+
+
+

@@ -1,0 +1,106 @@
+/* Set Up Font*/
+
+@font-face
+{
+	font-family: 'Nouvelle police';
+	src: url('ancherr.ttf') format('truetype');
+}
+
+/* Général */
+
+body
+{
+	background: url("background.png") scroll repeat top left;
+}
+
+h1,h2 
+{
+	font-family: 'Nouvelle police', sans-serif;
+	color: maroon;
+}
+
+/* Lisere & CV*/
+
+body
+{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+#lisere img
+{
+	height: 900px;
+}
+
+#CV
+{
+	margin: 30px;
+}
+
+/* Header */
+
+header
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#nom
+{
+	flex:1;
+	text-align: center;
+	padding: 10px;
+}
+
+h1
+{
+	font-size: 60px;
+	margin: 10px;
+}
+
+#photo img
+{
+	border: 3px solid maroon;
+	box-shadow: 10px 10px 8px black;
+	height: 150px;
+}
+
+/* Contenu */
+
+section
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+h2 
+{
+	padding-left: 10px;
+}
+
+article
+{
+	width: 25%;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1024px)
+{
+	#lisere
+	{
+		display: none;
+	}
+
+	section
+	{
+		flex-direction: column;
+	}
+}
+
+
+
+

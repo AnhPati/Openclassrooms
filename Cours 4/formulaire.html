@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="formulaire.css" />
+        <title>formulaire</title>
+    </head>
+
+    <body>
+
+      <p>Texte avant le formulaire</p>
+
+      <form method="post" action="traitement.php"><!-- Balise form indique le début et la fin du formulaire-->
+        <p><!--Il faut imperativement des balises de type block à l'intérieur d'u formulaire pour que le texte apparaisse-->
+
+          <label>Votre pseudo</label>:<input type="text" name="pseudo" id="pseudo" /><!--label contient le libellé du formulaire-->
+          <!--type="text" indique un formulaire monoligne-->
+          <!--Name renseigne le nom dans la base de données-->
+          <!--id permet de lier le label à la zone de texte, il peut comporter la même valeur (ex: "pseudo")-->
+
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--input peut personnaliser le formulaire-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="pseudo">Votre pseudo :</label>
+          <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Zozor" size="30" maxlength="10" />
+          <!--On peut agrandir le champ avec size.-->
+          <!--On peut limiter le nombre de caractères que l'on peut saisir avec maxlength.-->
+          <!--On peut pré-remplir le champ avec une valeur par défaut à l'aide de value.-->
+          <!--On peut donner une indication sur le contenu du champ avec placeholder.-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--Zone de saisie d'identifiant et mot de passe-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="pseudo">Votre pseudo :</label>
+          <input type="text" name="pseudo" id="pseudo" />
+       
+          <br />
+          <label for="pass">Votre mot de passe :</label>
+          <input type="password" name="pass" id="pass" />
+          <!--password crée un champ de saisi caché-->
+       
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--Zone de texte multiligne-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+          <textarea name="ameliorer" id="ameliorer"></textarea>
+          <!--La balise <textarea permet de créer une zone de texte-->
+          <!--On peut modifier la taille du champs en CSS avec widht et height-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="ameliorer">
+          Comment pensez-vous que je puisse améliorer mon site ?
+          </label>
+          <br />
+       
+          <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+Améliorer ton site ?!
+Mais enfin ! Il est tellement génialissime qu'il n'est pas nécessaire de l'améliorer !
+          </textarea>
+          <!--On peut rentrer un texte par défaut entre les balises <textarea>-->       
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="mail">Votre mail</label>
+          <input type="email" name="pseudo" id="mail"/>
+          <!--indique au navigateur que c'est un champ pour email-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="adresse">Adresse du site</label>
+          <input type="url" name="pseudo" id="adresse" />
+          <!--Indique au navigateur que c'est un champ pour url-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="phone">Votre téléphone</label>
+          <input type="tel" name="pseudo" id="phone" />
+          <!--Indique au navigateur une saisi de numéro de tel-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="Chiffres">Loto</label>
+          <input type="number" name="pseudo" id="Chiffres" />
+          <!--Affiche liste déroulante avec des nombres-->
+          <!--attributs: min, valeur mini, max, valeur max, step, déplacement entre les nombres-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="curseur">Bien ou pas?</label>
+          <input type="range" name="pseudo" id="curseur" />
+          <!--Affiche un slide-->
+          <!--attributs: min, max, step-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="couleur">Couleur préférée</label>
+          <input type="color" name="pseudo" id="couleur" />
+          <!--Affiche un champ de saisi de couleur-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="RDV">Quand ça?</label>
+          <input type="date" name="pseudo" id="RDV" />
+          <!--différents types de champs de sélection de dates existent: date, time, week, month, datetime, damtetime-:local-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="recherche">Rechercher</label>
+          <input type="search" name="pseudo" id="recherche" />
+          <!--Ouvre un champ de recherche-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--checkbox créer des cases à cocher-->
+
+      <form method="post" action="traitement.php">
+        <p>
+        Cochez les aliments que vous aimez manger :<br />
+        <input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br />
+        <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+        <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+        <input type="checkbox" name="huitres" id="huitres" checked /> <label for="huitres">Huitres</label>
+        <!--Avec les labels qui référencent les boutons-->
+        <!--checked coche une case par défaut-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--Les zones d'options permettent un choix unique dans une liste de possibilités-->
+      <!--Elles doivent etre organisées en groupes d'input avec le type radio-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+          <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+          <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+          <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+          <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+          <!--Les différentes options doivent avoir le même name, mais une value différente-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--Quand il y a deux zones d'options différentes, il faut donner un name unique à chaque groupe-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+          <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+          <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+          <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+          <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+        </p>
+        <p>
+          Sur quel continent habitez-vous ?<br />
+          <input type="radio" name="continent" value="europe" id="europe" /> <label for="europe">Europe</label><br />
+          <input type="radio" name="continent" value="afrique" id="afrique" /> <label for="afrique">Afrique</label><br />
+          <input type="radio" name="continent" value="asie" id="asie" /> <label for="asie">Asie</label><br />
+          <input type="radio" name="continent" value="amerique" id="amerique" /> <label for="amerique">Amérique</label><br />
+          <input type="radio" name="continent" value="australie" id="australie" /> <label for="australie">Australie</label>
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--Listes déroulantes: contenues dans les balises <select> qui indique le début et la fin de la liste-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="pays">Dans quel pays habitez-vous ?</label><br />
+          <select name="pays" id="pays">
+          <!--On ajoute un name à la liste pour donner un nom a la liste-->
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="royaume-uni">Royaume-Uni</option>
+            <option value="canada">Canada</option>
+            <option value="etats-unis">États-Unis</option>
+            <option value="chine">Chine</option>
+            <option value="japon">Japon</option>
+            <!--On ajoute value à chacune pour identifier le choix du visiteur-->
+            <!--selected pour un choix par défaut-->
+          </select>
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--On utilise la balise <optgroup> pour grouper les options-->
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="pays">Dans quel pays habitez-vous ?</label><br />
+          <select name="pays" id="pays">
+            <optgroup label="Europe">
+               <option value="france">France</option>
+               <option value="espagne">Espagne</option>
+               <option value="italie">Italie</option>
+               <option value="royaume-uni">Royaume-Uni</option>
+            </optgroup>
+            <optgroup label="Amérique">
+               <option value="canada">Canada</option>
+               <option value="etats-unis">Etats-Unis</option>
+            </optgroup>
+            <optgroup label="Asie">
+               <option value="chine">Chine</option>
+               <option value="japon">Japon</option>
+            </optgroup>
+          </select>
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <!--On peut regrouper les champs avec la balise <fieldset>-->
+
+      <form method="post" action="traitement.php">
+ 
+        <fieldset>
+          <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+
+          <label for="nom">Quel est votre nom ?</label>
+          <input type="text" name="nom" id="nom" />
+
+          <label for="prenom">Quel est votre prénom ?</label>
+          <input type="text" name="prenom" id="prenom" />
+ 
+          <label for="email">Quel est votre e-mail ?</label>
+          <input type="email" name="email" id="email" />
+
+        </fieldset>
+ 
+        <fieldset>
+          <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+ 
+          <p>
+            Faites un souhait que vous voudriez voir exaucé :
+
+            <input type="radio" name="souhait" value="riche" id="riche" /> <label for="riche">Etre riche</label>
+            <input type="radio" name="souhait" value="celebre" id="celebre" /> <label for="celebre">Etre célèbre</label>
+            <input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+            <input type="radio" name="souhait" value="autre" id="autre" /> <label for="autre">Autre...</label>
+          </p>
+ 
+          <p>
+            <label for="precisions">Si "Autre", veuillez préciser :</label>
+            <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+          </p>
+        </fieldset>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="pseudo">Votre pseudo</label>
+          <input type="text" name="pseudo" id="pseudo" autofocus />
+          <!--autofocus place le curseur dans le champ au chargement de la page-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="pseudo">Votre pseudo</label>
+          <input type="text" name="pseudo" id="pseudo" required />
+          <!--Rend le champ obligatoire-->
+          <!--On dispose de pseudo-formats en CSS pour changer le style des éléments requis (:required) et invalides (:invalid). N'oubliez pas non plus que vous disposez du pseudo-format :focus pour changer l'apparence d'un champ lorsque le curseur se trouve à l'intérieur.-->
+        </p>
+      </form>
+
+      <p>Texte après le formulaire</p>
+
+      <form method="post" action="traitement.php">
+        <p>
+          <label for="bouton"></label>
+          <input type="submit" name="post" id="post" value="Envoyer" />
+          <!--type="submit" : le principal bouton d'envoi de formulaire. C'est celui que vous utiliserez le plus souvent. Le visiteur sera conduit à la page indiquée dans l'attribut action du formulaire.-->
+          <!--type="reset" : remise à zéro du formulaire.-->
+          <!--type="image" : équivalent du bouton submit, présenté cette fois sous forme d'image. Rajoutez l'attribut src pour indiquer l'URL de l'image.-->
+          <!--type="button" : bouton générique, qui n'aura (par défaut) aucun effet. En général, ce bouton est géré en JavaScript pour exécuter des actions sur la page. Nous ne l'utiliserons pas ici.-->
+          <!--Lorsqu'on clique sur le bouton Envoyer, le formulaire nous amène à la page indiquée dans l'attribut action-->
+        </p>
+      </form>
+
+    </body>
+</html>
